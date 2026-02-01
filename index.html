@@ -84,6 +84,42 @@
 
         footer { background: #333; color: white; padding: 3rem; text-align: center; }
         .social-links a { font-size: 1.8rem; margin: 0 15px; color: white; }
+
+        /* Ajustes para Celular (Telas menores que 768px) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem; /* Diminui o nome da empresa no celular para não quebrar */
+            }
+
+            section {
+                padding: 2rem 1rem; /* Diminui os espaços laterais */
+            }
+
+            .flex-container {
+                flex-direction: column; /* Garante que texto e imagem fiquem um sobre o outro */
+                text-align: center;
+            }
+
+            h2 {
+                border-left: none;
+                border-bottom: 5px solid var(--verde-sap);
+                padding-left: 0;
+                padding-bottom: 10px;
+            }
+
+            .grid {
+                flex-direction: column; /* Cards de atuação ficam em lista no celular */
+            }
+
+            input[type="email"] {
+                width: 100%; /* Input da newsletter ocupa a largura toda */
+                margin-bottom: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
