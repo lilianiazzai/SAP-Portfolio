@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP - Gestão e Consultoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --verde-sap: #2e5a31;
+            --cinza-texto: #444;
+        }
+
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            line-height: 1.6; 
+            color: var(--cinza-texto); 
+            margin: 0; 
+        }
+
+        header { 
+            background: var(--verde-sap); 
+            color: white; 
+            padding: 4rem 1rem; /* Aumentei o respiro */
+            text-align: center; 
+        }
+
+        /* Aqui deixamos o nome da empresa bem maior */
+        header h1 { 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem; 
+            margin: 0;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        section { 
+            padding: 4rem 2rem; 
+            max-width: 1000px; 
+            margin: auto; 
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--verde-sap);
+            font-size: 2rem;
+            border-left: 5px solid var(--verde-sap);
+            padding-left: 15px;
+        }
+
+        /* Layout em colunas para o "Quem Somos" */
+        .flex-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .flex-item { flex: 1; min-width: 300px; }
+
+        .flex-item img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .grid { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+        .card { 
+            border: 1px solid #eee; 
+            padding: 25px; 
+            flex: 1; 
+            min-width: 250px; 
+            background: #f9f9f9;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+
+        footer { background: #333; color: white; padding: 3rem; text-align: center; }
+        .social-links a { font-size: 1.8rem; margin: 0 15px; color: white; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SAP</h1>
+    <p>Gestão e Consultoria Logística, Tecnologia & Ambiental</p>
+</header>
+
+<section id="sobre">
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Quem Somos</h2>
+            <p>Somos uma empresa especializada em consultoria em logística, gestão ambiental e consultoria hospitalar, com atuação integrada.</p>
+            <p>Nosso foco é a eficiência operacional, sustentabilidade e total conformidade legal para o seu negócio.</p>
+        </div>
+        <div class="flex-item">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Logística e Gestão">
+        </div>
+    </div>
+</section>
+
+<section id="atuacao" style="background-color: #fff;">
+    <h2>Áreas de Atuação</h2>
+    <div class="grid">
+        <div class="card">
+            <h3><i class="fas fa-truck"></i> Logística</h3>
+            <p>Diagnóstico operacional, otimização de processos e indicadores de desempenho (KPIs).</p>
+        </div>
+        <div class="card">
+            <h3><i class="fas fa-leaf"></i> Ambiental</h3>
+            <p>Licenciamento, gestão de resíduos e auditorias de conformidade legal.</p>
+        </div>
+        <div class="card">
+            <h3><i class="fas fa-hospital"></i> Hospitalar</h3>
+            <p>Gestão de resíduos de saúde (RSS) e implantação de protocolos ambientais.</p>
+        </div>
+    </div>
+</section>
+
+<section id="newsletter" style="background-color: #f4f4f4; text-align: center;">
+    <h2>Fique por dentro</h2>
+    <p>Cadastre o seu e-mail para receber as nossas novidades e atualizações estratégicas:</p>
+    <form action="#" style="margin-top: 20px;">
+        <input type="email" placeholder="O seu melhor e-mail" required 
+               style="padding: 12px; width: 300px; border: 1px solid #ccc; border-radius: 4px;">
+        <button type="submit" 
+                style="padding: 12px 25px; background: #2e5a31; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            Subscrever
+        </button>
+    </form>
+</section>
+
+<footer style="background: #222; color: white; padding: 3rem; text-align: center;">
+    <div style="margin-bottom: 20px;">
+        <h1 style="font-family: 'Montserrat', sans-serif; letter-spacing: 3px; margin-bottom: 5px;">SAP</h1>
+        <p style="font-size: 0.9rem; opacity: 0.7;">Gestão e Consultoria Logística, Tecnologia & Ambiental</p>
+    </div>
+    
+    <div class="social-links" style="margin: 20px 0;">
+        <a href="#" style="color: white; font-size: 1.8rem; margin: 0 15px;"><i class="fab fa-linkedin"></i></a>
+        <a href="#" style="color: white; font-size: 1.8rem; margin: 0 15px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: white; font-size: 1.8rem; margin: 0 15px;"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+    <p style="font-size: 0.9rem; opacity: 0.8;">&copy; 2024 SAP Consultoria - Todos os direitos reservados.</p>
+    <p style="font-size: 0.9rem; opacity: 0.8;">contato@sapconsultoria.com.br</p>
+</footer>
+
+</body>
+</html>
